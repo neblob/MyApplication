@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode,
                                     Intent data) {
-            ImageView image = (ImageView) findViewById(R.id.image);
+            ImageView image = (ImageView) findViewById(R.id.imageView);
 
             if (requestCode == TAKE_PICTURE && resultCode == RESULT_OK ) {
             Bitmap captureImage = (Bitmap)
