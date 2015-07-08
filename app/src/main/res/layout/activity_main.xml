@@ -5,6 +5,10 @@
     android:padding="16dp"
     android:weightSum="1">
 
+    <com.example.toshiba.myapplication.MySurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <Button
         android:id="@+id/capture_button"
         android:layout_width="match_parent"
