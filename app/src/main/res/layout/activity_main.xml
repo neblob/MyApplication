@@ -6,24 +6,28 @@
     android:weightSum="1">
 
   <RelativeLayout
-      android:layout_width="0dp"
-      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
       android:layout_weight="1" >
 
-      <com.example.cameraoverlay.MySurfaceView
+      <com.example.toshiba.myapplication.MySurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
       <ImageView
+          android:id="@+id/imageView"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_alignParentRight="true"
-          android:layout_alignParentTop="true" />
+          android:layout_alignParentTop="true"
+          android:src="@drawable/line"
+          android:visibility="gone" />
     </RelativeLayout>
+
     <Button
         android:id="@+id/shutter_button"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Take!"  />
+        android:layout_height="wrap_content"
+        android:text="Take a Picture"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

@@ -18,17 +18,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnCapture = (Button) findViewById(R.id.capture_button);
-        btnCapture.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, TAKE_PICTURE);
-            }
-
-        });
 
     }
 
