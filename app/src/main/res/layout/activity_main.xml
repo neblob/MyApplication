@@ -5,19 +5,25 @@
     android:padding="16dp"
     android:weightSum="1">
 
-    <com.example.toshiba.myapplication.MySurfaceView
+  <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1" >
+
+      <com.example.cameraoverlay.MySurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true" />
+    </RelativeLayout>
     <Button
-        android:id="@+id/capture_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="take a Picture"  />
-
-    <ImageView
+        android:id="@+id/shutter_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView" />
+        android:layout_height="match_parent"
+        android:text="Take!"  />
 
 </LinearLayout>
